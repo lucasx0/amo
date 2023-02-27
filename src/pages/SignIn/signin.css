@@ -66,9 +66,22 @@ form button{
   cursor: pointer;
 }
 
+.login label{
+  margin-bottom: 15px;
+  height: 35px;
+  border: 0;
+  border-radius: 7px;
+  padding: 10px;
+  font-size: 15px;
+  background-color: #fff;
+}
 
-.plat{
-  display: flex;
-  justify-content: center;
-  text-align: center;
+.login select{
+  margin-bottom: 15px;
+  height: 35px;
+  border: 0;
+  border-radius: 7px;
+  padding: 10px;
+  font-size: 15px;
+  background-color: #fff;
 }

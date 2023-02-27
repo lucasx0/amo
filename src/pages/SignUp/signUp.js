@@ -1,4 +1,3 @@
-import './signup.css';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logo1.png';
@@ -8,6 +7,8 @@ function SignUp() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [birthDate, setbirthDate] = useState('');
+  const [cpf, setCPF] = useState('');
+  const [rg, setRG] = useState('');
 
   return (
     <div className="container-center">
@@ -42,6 +43,30 @@ function SignUp() {
             value={birthDate}
             onChange={(e) => setbirthDate(e.target.value)}
           ></input>
+
+          <label for="sexo">Defina seu Sexo</label>
+
+          <select id="sexo">
+            <option value=""></option>
+            <option value="masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+            <option value="nan">Não Desejo Informar</option>
+          </select>
+
+          <input
+            type="number"
+            placeholder="CPF"
+            value={cpf}
+            onChange={(e) => setCPF(e.target.value)}
+          ></input>
+
+          <input
+            type="number"
+            placeholder="Registro Geral"
+            value={rg}
+            onChange={(e) => setRG(e.target.value)}
+          ></input>
+
           <button type="submit">Cadastrar</button>
         </form>
 
