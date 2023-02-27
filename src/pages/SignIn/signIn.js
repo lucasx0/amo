@@ -37,6 +37,10 @@ function SignIn() {
         </form>
 
         <Link to="/register">Criar uma conta</Link>
+        <br />
+        <p>
+          <strong>AMO SOLUÇÕES DIGITAIS</strong>
+        </p>
       </div>
     </div>
   );

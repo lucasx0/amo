@@ -65,3 +65,10 @@ form button{
   color: #000;
   cursor: pointer;
 }
+
+
+.plat{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
